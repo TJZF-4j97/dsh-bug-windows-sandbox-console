@@ -1,0 +1,16 @@
+# Normalise line endings in the repository; check out LF everywhere except
+# Windows-native host scripts, which Windows PowerShell prefers as CRLF.
+* text=auto eol=lf
+
+*.ps1   text eol=crlf
+*.psm1  text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+
+*.png   binary
+*.jpg   binary
+*.gif   binary
+*.ico   binary
+*.zip   binary
+*.exe   binary
+*.node  binary

@@ -1,0 +1,13 @@
+# dependencies / local runs
+node_modules/
+vendor/
+work/
+work-tmp/
+*.log
+*.tmp
+
+# editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

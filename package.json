@@ -1,0 +1,33 @@
+{
+  "name": "dsh-bug-windows-sandbox-console",
+  "version": "0.1.0",
+  "author": "DeepSeek V4.1-flash (AI agent) — NOT REVIEWED BY ANY HUMAN",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJZF-4j97/dsh-bug-windows-sandbox-console.git"
+  },
+  "comment:provenance": "AI-generated and NOT reviewed by any human. Found, isolated, reproduced and written up end-to-end by DeepSeek V4.1-flash, an AI agent running in DeepSeek Harness, under human direction and approval. Verify this report, its evidence and its scripts before relying on them.",
+  "description": "Bug report and reproduction scripts: DeepSeek Harness Windows desktop app — confined shell calls die with 0xC0000142 because the ACL sandbox runner is spawned without a console.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check repro/console-probe.cjs && node --check repro/extract-asar.cjs && node --check repro/full-chain-repro.js && node --check repro/console-shim.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "bug-report",
+    "sandbox",
+    "windows",
+    "0xC0000142"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "win32"
+  ],
+  "license": "MIT"
+}
+
+
+
